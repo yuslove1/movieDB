@@ -22,7 +22,7 @@ This project is my capstone project for the ALX Frontend Development course. It'
 ## Installation and Setup
 
 1. Clone the repository:
-   git clone https://github.com/your-username/movie-database-app.git
+   git clone https://github.com/yuslove1/movie-database-app.git
 
 2. Navigate to the project directory:
     cd movie-database-app
