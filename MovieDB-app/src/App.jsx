@@ -25,7 +25,7 @@ import PageLayout from "./components/common/PageLayout";
           element: <HeroPage />,
         }, 
         {
-          path: "search-result",
+          path: "search-result/:title",
           element: <SearchResult />,
         }, 
         {
