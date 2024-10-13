@@ -2,7 +2,7 @@ const Layout = (props) => {
     const { children } = props;
   
     return (
-      <div className="h-full">
+      <div className="h-full px">
         {children}
       </div>
     );s
