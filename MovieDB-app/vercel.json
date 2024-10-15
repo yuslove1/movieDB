@@ -18,9 +18,6 @@
     "env": {
       "NODE_VERSION": "16"
     },
-    "engines": {
-      "node": "16.x"
-    },
     "scripts": {
       "build": "vite build"
     }
