@@ -47,7 +47,6 @@ const Popular = () => {
     fetchPopular();
   }, [page, handleClick]);
 
-  console.log(popular)
 
   // https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
   return (
