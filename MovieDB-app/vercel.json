@@ -7,12 +7,5 @@
       "src": "package.json",
       "use": "@vercel/node"
     }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
   ]
 }
