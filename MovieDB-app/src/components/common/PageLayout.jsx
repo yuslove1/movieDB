@@ -8,11 +8,11 @@ const PageLayout = () => {
     //     width: "90%",
     //     margin: "auto",
     //   }}
-    className=" h-screen"
+    className=" "
     >
       <Navbar />
       <Outlet />
-      <div>this is footer</div>
+      {/* <div>Footer place-holder(if any)</div> */}
     </div>
   );
 };

@@ -1,31 +1,31 @@
 import axios from "axios";
 
 const apiKey = process.env.MOVIEDB_APP_API_KEY;
-let pageNum = 1;
-const baseUrl = 'https://api.themoviedb.org/3';
-
+const baseUrl = "https://api.themoviedb.org/3";
 
 const options = {
-method: 'GET',
-params: {
+  method: "GET",
+  params: {
     api_key: apiKey,
-    page: pageNum,
-    
-},
-headers: {
-    Accept: 'application/json',
-    // 'Authorization': `Bearer ${apiKey}` 
-}
-}
+    media_type: "tv",
+  },
+  headers: {
+    Accept: "application/json",
+    // 'Authorization': `Bearer ${apiKey}`
+  },
+};
 
 const fetchMovies = async (endpoint) => {
-try {
-    const response = await axios.get(`${baseUrl}/${endpoint}`, options)
-    return response.data.results;
-}catch (error) {
-    console.error('Error fetching movies:', error);
-    return [];
-}
-}
+  try {
+    const response = await axios.get(`${baseUrl}/${endpoint}`, options);
+    return response.data;
+  } catch (error) {
+    if (error.response && error.response.this.status === 400) {
+      throw new Error("Movie not found");
+    } else {
+      throw new Error("Server error occurred");
+    }
+  }
+};
 
 export default fetchMovies;

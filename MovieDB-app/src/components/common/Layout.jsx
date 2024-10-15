@@ -2,10 +2,10 @@ const Layout = (props) => {
     const { children } = props;
   
     return (
-      <div className="h-full px">
+      <div className="">
         {children}
       </div>
-    );s
+    );
   };
   
   export default Layout;

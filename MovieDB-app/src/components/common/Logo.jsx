@@ -7,7 +7,7 @@ function Logo() {
     <div className="text-4xl flex gap-1 items-center cursor-pointer"
     onClick={() => navigate("/")}>
       <svg
-        className="text-gray-700 w-10 h-10 inline"
+        className="text-gray-900 w-10 h-10 inline"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
