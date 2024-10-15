@@ -12,6 +12,7 @@ import SearchResult from "./components/Pages/SearchResult";
 import ViewDetails from "./components/Pages/ViewDetails";
 import NotFound from "./components/Pages/NotFound";
 import PageLayout from "./components/common/PageLayout";
+import Popular from "./components/Pages/Popular";
 
 
   const router = createBrowserRouter([
@@ -25,11 +26,15 @@ import PageLayout from "./components/common/PageLayout";
           element: <HeroPage />,
         }, 
         {
+          path: "Popular",
+          element: <Popular />,
+        }, 
+        {
           path: "search-result/:title",
           element: <SearchResult />,
         }, 
         {
-          path: "detail/:movieId",
+          path: "detail/:type/:movieId",
           element: <ViewDetails />,
         }, 
         {
