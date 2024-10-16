@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../logo";
+import Logo from "../Logo";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
