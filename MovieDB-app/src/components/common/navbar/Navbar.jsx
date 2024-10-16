@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
 import Layout from "../Layout";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   {
@@ -16,7 +17,7 @@ const navLinks = [
   
   },
   {
-    text: "About-Us",
+    text: "About",
     link: "/",
   },
 ];
@@ -41,9 +42,9 @@ function Navbar() {
         <div className="hidden sm:block my-auto">
           <div className="flex items-center font-roboto font-bold gap-2">
             {navLinks.map((link, index) => (
-              <a key={index} href={link.link} className={`hover:text-mutedred transition-all hover:border-b-4 border-myred hover:text-lg bg-darkcyan rounded-full p-2 text-white shadow-5xl shadow-slate-900`}>
+              <Link key={index} to={link.link} className={`hover:text-mutedred transition-all hover:border-b-4 border-myred hover:text-lg bg-darkcyan rounded-full p-2 text-white shadow-5xl shadow-slate-900`}>
                 {link.text}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
