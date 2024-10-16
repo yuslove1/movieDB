@@ -15,10 +15,12 @@ const Popular = () => {
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState()
 
+
   const handleClick = () => {
     let newPage = page + 1;
     setPage(newPage);
-  };
+  }
+
 
   useEffect(() => {
     const fetchPopular = async () => {
@@ -45,10 +47,8 @@ const Popular = () => {
     };
 
     fetchPopular();
-  }, [page, handleClick]);
+  }, [page]);
 
-
-  // https://api.themoviedb.org/3/movie/popular?language=en-US&page=1
   return (
     <div className="lg:max-w-[80%] mx-auto pt-8 mb-8">
       <ListHeader title="Popular" count={total} />

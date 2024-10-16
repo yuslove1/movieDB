@@ -4,7 +4,7 @@ import ListHeader from "../common/ListHeader";
 import MovieListContainer from "../common/MovieListContainer";
 import { useNavigate, useParams } from "react-router-dom";
 import fetchMovies from "../../services/api/fetchMovies";
-import Button from "../common/button";
+import Button from "../common/Button";
 import errorHandling from "../../utils/errorHandling";
 import LoadingState from "../common/LoadingState";
 import NotFound from "./NotFound";
