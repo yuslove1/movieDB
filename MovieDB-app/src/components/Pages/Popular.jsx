@@ -5,7 +5,7 @@ import ListHeader from "../common/ListHeader";
 import LoadingState from "../common/LoadingState";
 import MovieListContainer from "../common/MovieListContainer";
 import NotFound from "./NotFound";
-import Button from "../common/button";
+import Button from "../common/Button";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
