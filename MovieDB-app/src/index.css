@@ -18,7 +18,7 @@
 
 @layer utilities{
   .headerStyle {
-    @apply dark:text-white font-cinzel font-black text-2xl lg:text-5xl sm:text-3xl text-center;
+    @apply text-white font-cinzel font-black text-2xl lg:text-5xl sm:text-3xl text-center;
    }
 }
 
