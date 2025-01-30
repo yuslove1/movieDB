@@ -1,6 +1,6 @@
 # Movie Database Application
 
-This project is my capstone project for the ALX Frontend Development course. It's a movie database web application built with React that allows users to search for movies and view detailed information about them.
+This project is my capstone project for the ALX Frontend Development course. It's a movie database web application built with React and tailwind that allows users to search for movies and view detailed information about them.
 
 
 ## Features
